@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="{% static 'css/new.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/skill.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/exp.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/dropdown.css' %}"/>
+    <link rel="stylesheet" href="search.css">
+  </head>
+
+  <body>
+    <!-- Background Image -->
+    <div class="background-image"></div>
+
+    <section class="page">
+      <!-- Navigation Bar -->
+      <nav>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <a href = "">
+          <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_nm1huacl.json"  background="transparent" speed="0.7"  loop autoplay></lottie-player>
+        </a> 
+          <div class="nav-links" id="navlinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">CONTACT US</a></li>
+            <li><a href="">FAQ</a></li>
+          </ul>
+        </div>
+        <h1 class ="user-text">
+          <span>U</span>
+          <span>S</span>
+          <span>E</span>
+          <span>R &nbsp</span>
+          <span>S</span>
+          <span>Y</span>
+          <span>S</span>
+          <span>T</span>
+          <span>E</span>
+          <span>M</span>
+        </h1>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+
+      <!-- User Search Bar (For jobs) -->
+        <div class="user-search">
+          <!-- <a href="" target="_blank" hidden></a> -->
+          <input type="text" placeholder="Search for job.....">
+          <!-- <div class="autocom-box">
+            <!-- here list are inserted from javascript -.->
+          </div> -->
+          <div class="icon">
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+
+      <!-- Job Requirment -->
+      <div class = "jobdetails">
+
+        <div class="skills"> 
+          <h4>SKILLS</h4>
+          <div class="skills-container">
+            <span class="tag">css</span> 
+            <span class="tag">html</span> 
+            <span class="tag">java</span> 
+            <span class="tag">javascript</span> 
+          </div>
+
+        </div>
+
+        <div class="experience">
+          <h4>EXPERIENCE</h4>
+          <div class="experience-container">
+          <span class="tag"> from 2010 to 2019 </span>
+          </div>
+
+        </div>
+
+        <div  class="age">
+          <h4>AGE</h4>
+          <div class="age-container">
+           <span class="tag"> 30-40 years </span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Upload Part -->
+      <div class="upload-resume">
+        <div class="upload-text">
+          <h1>Upload Your Resume</h1>
+          <p>File Types Can Be Uploaded for a Resume: csv, pdf, excel, word (doc, docx), txt, rtf, image, azw.</p>
+        </div>
+        <form action="#">
+          <input class="file-input" type="file" name="file" hidden>
+          <i class="fas fa-cloud-upload-alt"></i>
+          <p>Browse File to Upload</p>
+        </form>
+        <section class="progress-area"></section>
+        <section class="uploaded-area"></section>
+      </div>
+
+      <div  class="button-container">
+        <a href ="#" class ="matching-button">
+          <span>Matching</span>
+        </a>
+      </div>
+      
+
+
+    </section>  
+
+    <!-- Scripts Part -->
+    <script src="{% static 'js/suggestions.js'%}"></script>
+    <script src="{% static  'js/search_job.js'%}"></script>
+    <script>
+      var navlinks =document.getElementById("navlinks");
+      function showmenu()
+      {
+      navlinks.style.right = "0";
+      }
+      function hidemenu()
+      {
+      navlinks.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const matching_button = document.querySelector('.matching-button');
+      matching_button.onmousemove = function(e)
+      {
+        const x = e.pageX - matching_button.offsetLeft;
+        const y = e.pageY - matching_button.offsetTop;
+        matching_button.style.setProperty('--x' , x + 'px');
+        matching_button.style.setProperty('--y' , y + 'px');
+      }
+    </script>
+    <script src = "{% static 'js/exp.js'%}"></script>
+    <script src = "{% static 'js/skill.js'%}"></script>
+    <script src = "{% static 'js/dropdown.js'%}"></script>
+    <script src = 'search.js'></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script>
+
+    const inputText = document.querySelector('#txt');
+    const myButton = document.querySelector('.btn-list');
+    const list = document.querySelector('.container ul');
+    myButton.addEventlistener('click', (e)=>{
+    if(inputText. value != ""){
+    e.preventDefault();
+    // create Li
+    const myLi = document.createElement ('li');
+    myLi.innerHTML = inputText.value;
+    list.appendChild(myLi);
+    const mySpan = document.createElement('span');
+    mySpan.innerHTML = 'x';
+    myLi.appendChild(mySpan);
+    }
+    const close = document.querySelectorAll('span');
+    for (let i=0; i<close.length; i++){
+    close[i].addEventlistener('click', ()=>{
+    close[i].parentElement.style.opacity = 0;
+    setTimeout(()=>{
+    close[i].parentElement.style.opacity = "none";
+    close[i].parentElement.remove();
+
+    },500)
+    })
+    }
+    inputText.value = "";
+    });
+    </script> -->
+
+  </body>
+</html>

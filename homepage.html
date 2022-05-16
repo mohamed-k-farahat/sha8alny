@@ -1,0 +1,123 @@
+<!-- {% load static %} -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="{% static 'css/homepage.css' %}">  -->
+        <link rel="stylesheet" href="homepage.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+        </style>
+    </head>
+    <body>
+        <div class="background-image"></div>
+        <section class="page">
+            <nav>
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <a href = ""><lottie-player src="https://assets7.lottiefiles.com/packages/lf20_nm1huacl.json"  background="transparent" speed="0.7"  loop autoplay></lottie-player>
+                </a> 
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">CONTACT US</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="buttons"> 
+                    <button class="signup-button">Signup</button> 
+                    <button class="login-button">Login</button>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>Become an AI-First Company</h1>
+                <p>Partner with Affinda to capture the opportunities of <br> the 4th Industrial Revolution</p>
+                <a href="" class="visit-button">Visit Us To Know More</a>
+            </div>
+
+            
+           
+         
+            
+
+
+            
+    </section> 
+
+       <script>
+            var navlinks =document.getElementById("navlinks");
+            function showmenu()
+            {
+                navlinks.style.right = "0";
+            }
+            function hidemenu()
+            {
+                navlinks.style.right = "-200px";
+            }
+        </script>
+
+
+<div class="cardsWrapper" style="opacity: 1; transform: none;">
+    <div class="card__StyledCardWrapper-sc-1tdoagj-0 eQjjWS">
+        <div color="#22B5F3" class="card__StyledCard-sc-1tdoagj-1 heLgNL">
+            <div class="logo mb-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="logoo"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm95.8 32.6L272 480l-32-136 32-56h-96l32 56-32 136-47.8-191.4C56.9 292 0 350.3 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-72.1-56.9-130.4-128.2-133.8z"/></svg> 
+            </div>
+            <h4 class="mb-1">HR System</h4>
+            <div class="text">Dive in to interactive demos that derive insights from profiles, resumes and CVs.</div>
+            <a class="button__StyledBtn-sc-1afqc3r-0 card__StyledButton-sc-1tdoagj-2 iKFQXY gLGpKg hr_button" href="">
+                <span>Discover  demos</span>
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-w-14 icon-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="card__StyledCardWrapper-sc-1tdoagj-0 eQjjWS">
+        <div color="#22B5F3" class="card__StyledCard-sc-1tdoagj-1 heLgNL  user_box">
+            <div class="logo mb-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="logoo"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg>
+            </div>
+            <h4 class="mb-1">USER System</h4>
+            <div class="text">Dive in to interactive demos that derive insights from profiles, resumes and CVs.</div>
+            <a class="button__StyledBtn-sc-1afqc3r-0 card__StyledButton-sc-1tdoagj-2 iKFQXY gLGpKg user_button" href="">
+                <span>Discover  demos</span>
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-w-14 icon-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path>
+                </svg>
+            </a>
+        </div>
+</div>
+</div>
+<script>
+    const hr_button = document.querySelector('.hr_button');
+    hr_button.onmousemove = function(e)
+    {
+      const x = e.pageX - hr_button.offsetLeft;
+      const y = e.pageY - hr_button.offsetTop;
+      hr_button.style.setProperty('--x' , x + 'px');
+      hr_button.style.setProperty('--y' , y + 'px');
+    }
+  </script>
+
+
+<script>
+    const user_button = document.querySelector('.user_button');
+    user_button.onmousemove = function(e)
+    {
+      const x = e.pageX - user_button.offsetLeft;
+      const y = e.pageY - user_button.offsetTop;
+      user_button.style.setProperty('--x' , x + 'px');
+      user_button.style.setProperty('--y' , y + 'px');
+    }
+  </script> 
+    </body>
+</html>

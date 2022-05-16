@@ -1,0 +1,45 @@
+.skills {
+    margin: 20px;
+  }
+  .skillsinput{
+    height: 48px;
+    width: 250px;
+    margin-bottom: 20px;
+    font-size: 13.5px;
+    border: 1px solid #DADCE0;
+    border-radius: .5rem;
+    outline: none;
+    padding: 1rem;
+    background: none;
+    z-index: 1;
+    color: #000;
+  }
+  .skills-container {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 6px;
+    background-color: #c0c0c0;
+    width: 55%;
+  }
+  .skills-container .tag {
+    height: 28px;
+    margin: 5px;
+    padding: 6px 7px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    color: #000;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 1px 1px #fff;
+    cursor: default;
+  }
+  .tag i {
+    font-size: 16px;
+    color: rgb(143, 143, 143);
+    margin-left: 5px;
+    cursor: pointer;
+  }

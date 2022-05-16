@@ -1,0 +1,48 @@
+.experience {
+    margin: 20px;
+  }
+  .experienceinput{
+    height: 48px;
+    width: 250px;
+    margin-bottom: 20px;
+    font-size: 13.5px;
+    border: 1px solid #DADCE0;
+    border-radius: .5rem;
+    outline: none;
+    padding: 1rem;
+    background: none;
+    z-index: 1;
+    color: #000;
+  }
+  .experience-container {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 6px;
+    background-color: #c0c0c0;
+    width: fit-content;
+    max-width: fit-content;
+    block-size: fit-content;
+  }
+  .experience-container .tagg {
+    height: 28px;
+    margin: 5px;
+    padding: 6px 7px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    color: #000;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 1px 1px #fff;
+    cursor: default;
+  }
+  .tagg i {
+    font-size: 16px;
+    color: rgb(143, 143, 143);
+    margin-left: 5px;
+    cursor: pointer;
+  }
