@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.background-image
+{
+    height: 100vh;
+    width: 100%;
+    background: url(boody.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: -1;
+    filter: blur(15px);
+}
+.contact-us
+{
+    min-width: 100%;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content
+{
+    max-width: 800px;
+    text-align: center;
+}
+.content h2
+{
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+}
+.content p
+{
+    font-weight: 600;
+    color: #000;
+}
+.contact-us-container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.contact-us-info
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}   
+.icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.text
+{
+    display: flex;
+    margin-Left: 20px;
+    font-size: 16px;
+    color: #000;
+    flex-direction: column;
+    font-weight: 500;
+}
+.text h3
+{
+    font-weight: 700;
+    color: #00bcd4;
+}
+.contact-us-form
+{
+    width: 50%;
+    padding: 40px;
+    background: #fff;
+    border-radius: 7px;
+}
+.contact-us-form h2
+{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.inputbox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.inputbox input,
+.inputbox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.inputbox span
+{
+    position: absolute;
+    Left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.inputbox input:focus ~ span,
+.inputbox input:valid ~ span,
+.inputbox textarea:focus ~ span,
+.inputbox textarea:valid ~ span
+{
+    color: #666;
+    font-size: 16px;
+    transform: translateY(-20px);
+}
+.inputbox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 7px;
+}
+.inputbox input[type="submit"]:hover
+{
+    background: #0092a5;
+    transition: 0.4s;
+}
+@media (max-width: 990px)
+    {
+    .contact-us
+    {
+        padding: 50px;
+    }
+    
+    .contact-us-container
+    {
+        flex-direction: column;   
+    }
+    .contact-us-info
+    {
+        margin-bottom: 40px;
+    }
+    .contact-us-info,
+    .contact-us-form
+    {
+        width: 100%;
+    }
+    .social-icon
+    {
+        display: flex;
+        position: relative;
+        right: 29%;
+    }
+    .background-image
+    {
+        height: 115vh;
+    }
+    
+}
+.social-box 
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    left: 28%;
+}
+.social-icon
+{
+    font-size: 35px;
+}
+
+.fa-whatsapp:hover
+{
+    font-size: 45px;
+    transition: 0.4s;
+    color: #34bf49;
+}
+.fa-facebook:hover
+{
+    font-size: 45px;
+    transition: 0.4s;
+    color: #101bbb;
+}
+.fa-twitter:hover
+{
+    font-size: 45px;
+    transition: 0.4s;
+    color: #00aced;;
+}
+.fa-instagram:hover
+{
+    font-size: 45px;
+    transition: 0.4s;
+    color: #bc2a8d;;
+}
+.fa-github:hover
+{
+    font-size: 45px;
+    transition: 0.4s;
+    color: #fff;
+}
+.social-icon a
+{
+    text-decoration: none;
+    color: black;
+}
+.fa-whatsapp
+{
+    margin-right: 30px;
+}
+.fa-facebook
+{
+    margin-right: 30px;
+}
+.fa-twitter
+{
+    margin-right: 30px;
+}
+.fa-instagram
+{
+    margin-right: 30px;
+}
+.fa-github
+{
+    margin-right: 30px;
+}

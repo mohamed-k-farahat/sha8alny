@@ -1,0 +1,95 @@
+<!-- {% load static %} -->
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/upload.css' %}">
+        <link rel="stylesheet" href="upload.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head> 
+    <body>
+      <div class="background-image"></div>
+
+      <section class="page">
+        <nav>
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <a href = "">
+              <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_nm1huacl.json"  background="transparent" speed="0.7"  loop autoplay></lottie-player>
+            </a> 
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+            </div>
+            <h1 class ="hr-text">
+              <span>H</span>
+              <span>R &nbsp</span>
+              <span>S</span>
+              <span>Y</span>
+              <span>S</span>
+              <span>T</span>
+              <span>E</span>
+              <span>M</span>
+            </h1>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+
+        <div class="upload-resume"> 
+          <div class="upload-text">
+            <h1>Upload Resume</h1>
+            <p>File Types Can Be Uploaded for a Resume: csv, pdf, excel, word (doc, docx), txt, rtf, image, azw.</p>
+          </div>
+            <form action="#">
+              <input class="file-input" type="file" name="file" hidden>
+              <i class="fas fa-cloud-upload-alt"></i>
+            </form>
+            <section class="progress-area"></section>
+            <section class="uploaded-area"></section>            
+          </div>
+
+
+
+          <div  class="button-container">
+          <a href ="#" class ="summarize_button">
+              <span>Summarize</span>
+            </a>
+          </div>
+    </section> 
+   
+    
+          <script src="{% static 'js/upload.js' %}"></script> 
+          <script src="upload.js"></script> 
+          <script>
+            var navlinks =document.getElementById("navlinks");
+            function showmenu()
+            {
+                navlinks.style.right = "0";
+            }
+            function hidemenu()
+            {
+                navlinks.style.right = "-200px";
+            }
+        </script>
+        <script>
+          const summarize_button = document.querySelector('.summarize_button');
+          summarize_button.onmousemove = function(e)
+          {
+            const x = e.pageX - summarize_button.offsetLeft;
+            const y = e.pageY - summarize_button.offsetTop;
+            summarize_button.style.setProperty('--x' , x + 'px');
+            summarize_button.style.setProperty('--y' , y + 'px');
+          }
+        </script>
+    </body>
+</html>

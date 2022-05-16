@@ -1,0 +1,208 @@
+<!-- {% load static %} -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="{% static 'css/new.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/skill.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/exp.css' %}"/>
+    <link rel="stylesheet" href="searchjob.css"/>
+    <!-- <link rel="stylesheet" href="experience.css"/>
+    <link rel="stylesheet" href="skills.css"/> -->
+    <style>
+
+    </style>
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <section class="page">
+      <!-- Navigation Bar -->
+        <nav>
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <a href = "">
+              <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_nm1huacl.json"  background="transparent" speed="0.7"  loop autoplay></lottie-player>
+            </a> 
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+            </div>
+            <h1 class ="hr-text">
+              <span>H</span>
+              <span>R &nbsp</span>
+              <span>S</span>
+              <span>Y</span>
+              <span>S</span>
+              <span>T</span>
+              <span>E</span>
+              <span>M</span>
+            </h1>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+        <!-- Search Bar (For jobs) -->
+        <div class="hr-search"> 
+          <!-- <a href="" target="_blank" hidden></a> -->
+          <input type="text" placeholder="Search for job.....">
+          <!-- <div class="autocom-box">
+            <!-- here list are inserted from javascript -.->
+          </div> -->
+          <div class="icon">
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+
+          <!-- Job Requirment -->
+         <div class = "jobdetails">
+
+          <div class="skills">  
+            <h4>SKILLS</h4>
+            <input type="text" class="skillsinput" placeholder="add a skills">
+            <div class="skills-container">
+
+            </div>
+          </div>
+
+            <div class="experience">
+              <h4>EXPERIENCE</h4>
+                <input type="text" class="experienceinput" placeholder="add a experience">
+                <div class="experience-container">
+
+                </div>
+            </div>
+
+            <div  class="age">
+              <h4>AGE</h4>
+              <br>
+              <div class="dropdown">
+              <div class="select-box">
+                <div class="options-container">
+                  <div class="option">
+                    <input type="radio" class="radio" id="frechgrad" name="category"/>
+                    <label for="frech grad">18-22</label>
+                  </div>
+
+                  <div class="option">
+                    <input type="radio" class="radio" id="" name="" />
+                    <label for="">23-30</label>
+                  </div>
+
+                  <div class="option">
+                    <input type="radio" class="radio" id="" name="" />
+                    <label for="">31-40</label>
+                  </div>
+
+                  <div class="option">
+                    <input type="radio" class="radio" id="" name="" />
+                    <label for="">41-45</label>
+                  </div>
+
+                  <div class="option">
+                    <input type="radio" class="radio" id="" name="" />
+                    <label for="">46-60</label>
+                  </div>
+                </div>
+                <div class="selected">
+                  Select age
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class ="howmuchresume">
+            <h4>how much resumes do you want to show ?</h4>
+            <input type ="text" class="howmuchresumeinput" placeholder="Enter a Value">
+          </div>
+
+                
+        </div>
+
+        <div class="button-container">
+          <a href ="#" class ="summarize_button">
+            <span>Ranking</span>
+          </a>
+        </div> 
+
+        
+    
+
+  </section>
+    <script src="{% static 'js/suggestions.js'%}"></script>
+    <script src="{% static  'js/search_job.js'%}"></script>
+    <script>
+      var navlinks =document.getElementById("navlinks");
+      function showmenu()
+      {
+          navlinks.style.right = "0";
+      }
+      function hidemenu()
+      {
+          navlinks.style.right = "-200px";
+      }
+  </script>
+  <script>
+    const summarize_button = document.querySelector('.summarize_button');
+    summarize_button.onmousemove = function(e)
+    {
+      const x = e.pageX - summarize_button.offsetLeft;
+      const y = e.pageY - summarize_button.offsetTop;
+      summarize_button.style.setProperty('--x' , x + 'px');
+      summarize_button.style.setProperty('--y' , y + 'px');
+    }
+  </script>
+  <script src = "{% static 'js/exp.js'%}"></script>
+  <script src = "{% static 'js/skill.js'%}"></script>
+  <script src = "{% static 'js/dropdown.js'%}"></script>
+
+  
+  <script src = "searchjob.js"></script>
+  <!-- <script src = "experience.js"></script>
+  <script src = "skills.js"></script> -->
+
+
+
+
+<!-- <script>
+
+    const inputText = document.querySelector('#txt');
+    const myButton = document.querySelector('.btn-list');
+    const list = document.querySelector('.container ul');
+    myButton.addEventlistener('click', (e)=>{
+    if(inputText. value != ""){
+    e.preventDefault();
+    // create Li
+    const myLi = document.createElement ('li');
+    myLi.innerHTML = inputText.value;
+    list.appendChild(myLi);
+    const mySpan = document.createElement('span');
+    mySpan.innerHTML = 'x';
+    myLi.appendChild(mySpan);
+    }
+    const close = document.querySelectorAll('span');
+for (let i=0; i<close.length; i++){
+close[i].addEventlistener('click', ()=>{
+close[i].parentElement.style.opacity = 0;
+setTimeout(()=>{
+  close[i].parentElement.style.opacity = "none";
+  close[i].parentElement.remove();
+
+},500)
+})
+}
+inputText.value = "";
+    });
+  </script> -->
+  
+  </body>
+</html>

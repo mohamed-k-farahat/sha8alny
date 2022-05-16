@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+  display: flex;
+}
+.background-image
+{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://images.pexels.com/photos/5439470/pexels-photo-5439470.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: -1;
+}
+.page
+{
+   min-height: 100vh;
+   width: 100%;
+   position: relative;
+}
+nav
+{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;   
+}
+nav img , lottie-player
+{
+    width: 70px;
+}
+.nav-links
+{
+    flex: 1;
+    text-align: center; /* should be center because the signup and login will add*/
+}
+.nav-links ul li 
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a
+{
+    color :#fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.nav-links ul li::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.nav-links ul li:hover::after
+{
+    width: 100%;
+}
+
+.hr-text
+{
+    margin: 0;
+    padding: 0;
+    color:#fff;
+    font-size: 25px;
+}
+.hr-text span
+{
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    animation: animate 5s linear infinite;
+}
+.hr-text span:nth-child(1)
+{
+    animation-delay: 0s;
+}
+.hr-text span:nth-child(2)
+{
+    animation-delay: 0.5s;
+}
+.hr-text span:nth-child(3)
+{
+    animation-delay: 1s;
+}
+.hr-text span:nth-child(4)
+{
+    animation-delay: 1.5s;
+}
+.hr-text span:nth-child(5)
+{
+    animation-delay: 2s;
+}
+.hr-text span:nth-child(6)
+{
+    animation-delay: 2.5s;
+}
+.hr-text span:nth-child(7)
+{
+    animation-delay: 3s;
+}
+.hr-text span:nth-child(8)
+{
+    animation-delay: 3.5s;
+}
+@keyframes animate
+{
+    0% , 100%
+    {
+        color:#000;
+        filter: blur(0px);
+        text-shadow: 0 0 10px #111,
+                    0 0 20px #fff,
+                    0 0 40px #fff,
+                    0 0 80px #fff,
+                    0 0 120px #fff,
+                    0 0 200px #fff,
+                    0 0 300px #fff,
+                    0 0 400px #fff;
+    }
+    5% , 95%
+    {
+        color:#fff;
+        filter: blur(0x);
+        text-shadow: none;
+    }
+}
+
+nav .fa
+{
+    display: none;
+}
+@media(max-width:700px)
+{
+    .text-box h1
+    {
+        font-size: 30px;
+    }
+    .nav-links ul li
+    {
+        display: block;
+
+    }
+    .nav-links
+    {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa
+    {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul
+    {
+        padding: 30px;
+
+    }
+} 
+
+
+
+/* Import Google font - Poppins */
+
+
+.upload-resume{
+    width: 1000px;
+    background: transparent;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 7px 7px 12px rgba(0,0,0,0.05);
+    margin: auto;
+  }
+
+  .upload-text
+{
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+::selection{
+    color: #fff;
+    background: #6990F2;
+  }
+ 
+  .upload-resume form i:hover
+  {
+    font-size: 60px;
+    transition: 0.35s;
+  }
+  .upload-resume form{
+    height: 200px;
+    display: flex;
+    cursor: pointer;
+    margin: 30px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed #6990F2;
+  }
+  .upload-resume form :where(i, p){
+    color: #6990F2;
+  }
+  .upload-resume  form i{
+    font-size: 50px;
+    opacity: 0.7;
+  }
+  .upload-resume form p{
+    margin-top: 15px;
+    font-size: 16px;
+    opacity: 0.7;
+
+  }
+
+section .row{
+  margin-bottom: 10px;
+  background: #fff;
+  list-style: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section .row i{
+  color: #6990F2;
+  font-size: 30px;
+}
+section .details span{
+  font-size: 14px;
+}
+.progress-area .row .content{
+  width: 100%;
+  margin-left: 15px;
+}
+.progress-area .details{
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+  justify-content: space-between;
+}
+.progress-area .content .progress-bar{
+  height: 6px;
+  width: 100%;
+  margin-bottom: 4px;
+  background: #fff;
+  border-radius: 30px;
+}
+.content .progress-bar .progress{
+  height: 100%;
+  width: 0%;
+  background: #6990F2;
+  border-radius: inherit;
+}
+.uploaded-area{
+  max-height: 232px;
+  overflow-y: scroll;
+}
+.uploaded-area.onprogress{
+  max-height: 150px;
+}
+.uploaded-area::-webkit-scrollbar{
+  width: 0px;
+}
+.uploaded-area .row .content{
+  display: flex;
+  align-items: center;
+}
+.uploaded-area .row .details{
+  display: flex;
+  margin-left: 15px;
+  flex-direction: column;
+}
+.uploaded-area .row .details .size{
+  color: #404040;
+  font-size: 11px;
+}
+.uploaded-area i.fa-check{
+  font-size: 16px;
+}
+
+
+
+
+.button-container
+{
+  margin-bottom: 60px;
+}
+.summarize_button
+{
+    border-radius: 7px;
+    position: relative;
+    display: inline-flex;
+    padding: 10px 24px;
+    background: #363636;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+.summarize_button span
+{
+    position: relative;
+    z-index: 1;
+}
+.summarize_button::before
+{
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50% , -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #2196f3;
+    transition: width 0.5s , height 0.5s;
+}
+.summarize_button:hover::before
+{
+    width: 300px;
+    height: 300px;
+}
+.summarize_button
+{
+    position: absolute;
+    right: 13.39%;
+    margin-top: -5px;
+}
